@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="crossorigin="anonymous"referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="style.css"/>
+  </head>
+  <body>
+  <div class="header">Audio App</div>
+  <div class="container">
+    <div class="sidebar"></div>
+    <div class="music-container">
+      <div class="files-list">Files List</div>
+      <div class="music-box" id="hey" onclick="setAudio()">
+        <h3>hey.mp3</h3>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+      </div>
+      <div class="music-box" id="summer" onclick="setAudio()">
+        <h3>summer.mp3</h3>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+      </div>
+      <div class="music-box" id="ukulele" onclick="setAudio()">
+        <h3>ukulele.mp3</h3>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+      </div>
+      <div class="music-box" id="track1" onclick="setAudio()">
+        <h3>track1.mp3</h3>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+      </div>
+      <div class="music-box" id="track2" onclick="setAudio()">
+        <h3>track2.mp3</h3>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+      </div>
+    </div>
+
+    <div class="audio-text-container">
+      <div class="audio-container">
+        <div class="track-name">hey</div>
+        <div class="audio"></div>
+
+        <div class="buttons">
+          <span class="play-btn btn">
+            <i class="fas fa-play" id="faPlay"></i>
+            <i class="fas fa-pause" id="faPause"></i>
+          </span>
+
+          <span class="backward-btn btn">
+            <i class="fas fa-backward"></i>
+          </span>
+
+          <span class="stop-btn btn">
+            <i class="fas fa-stop"></i>
+          </span>
+
+          <span class="forward-btn btn">
+            <i class="fas fa-forward"></i>
+          </span>
+
+          <span class="mute-btn btn">
+            <i class="fas fa-volume-up"></i>
+            <i class="fas fa-volume-mute"></i>
+          </span>
+          
+          <input type="range" min="0" max="1" step="0.1" value="0.5" class="volume-slider"/>
+        </div>
+      </div>
+      <div class="text-area">
+        <textarea name="textArea" id="textArea" placeholder=""></textarea>
+        <button id="saveText">Save Text</button>
+      </div>
+    </div>
+  </div>  
+
+  <script src="Javascript/wavesurfer.js"></script>
+  <script src="Javascript/script.js"></script>
+  </body>
+</html>
